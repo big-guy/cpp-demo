@@ -1,0 +1,25 @@
+// Generated f5b09edb-62fb-4c4f-9087-2374f7434798
+
+// TODO: Remove this once we bump the minimum version of the test
+try {
+    apply plugin: 'cpp-application'
+} catch (Exception e) {
+    apply plugin: 'cpp-executable'
+}
+
+
+
+dependencies {
+    
+    implementation project(":project85")
+    
+    implementation project(":project92")
+    
+    implementation project(":project93")
+    
+    implementation project(":project95")
+    
+    implementation project(":project97")
+    
+}
+

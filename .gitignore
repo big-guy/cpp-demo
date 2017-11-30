@@ -1,0 +1,22 @@
+# Gradle Files
+build
+.gradle
+
+# Local repository
+cpp/repo
+
+# Swift Package Manager Files
+.build
+Packages
+*.xcodeproj
+*.xcworkspace
+
+# AppCode/IDEA Files
+.idea
+*.iml
+*.ipr
+*.iws
+out/
+
+# Mac OS Junk
+.DS_Store

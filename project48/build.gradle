@@ -1,0 +1,20 @@
+// Generated 1cd022f2-f548-4062-8109-908246155543
+
+apply plugin: 'cpp-library'
+
+
+
+dependencies {
+    
+    implementation project(":project5")
+    
+    implementation project(":project7")
+    
+    implementation project(":project9")
+    
+    implementation project(":project10")
+    
+    implementation project(":project13")
+    
+}
+

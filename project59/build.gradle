@@ -1,0 +1,20 @@
+// Generated 0baccf05-2955-45ee-bd51-3930f60785d3
+
+apply plugin: 'cpp-library'
+
+
+
+dependencies {
+    
+    implementation project(":project18")
+    
+    implementation project(":project20")
+    
+    implementation project(":project24")
+    
+    implementation project(":project39")
+    
+    implementation project(":project50")
+    
+}
+

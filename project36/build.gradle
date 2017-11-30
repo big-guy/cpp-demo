@@ -1,0 +1,20 @@
+// Generated 891db2a8-ee2d-4efd-814b-4bbeb2b45162
+
+apply plugin: 'cpp-library'
+
+
+
+dependencies {
+    
+    implementation project(":project3")
+    
+    implementation project(":project8")
+    
+    implementation project(":project9")
+    
+    implementation project(":project15")
+    
+    implementation project(":project16")
+    
+}
+

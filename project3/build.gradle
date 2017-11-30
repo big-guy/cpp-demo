@@ -1,0 +1,6 @@
+// Generated 1a4184d9-156c-41f3-865a-673a74e8eb1f
+
+apply plugin: 'cpp-library'
+
+
+
