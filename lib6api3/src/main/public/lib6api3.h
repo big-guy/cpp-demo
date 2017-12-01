@@ -1,0 +1,59 @@
+// GENERATED SOURCE FILE
+#ifndef __LIB6API3__
+#define __LIB6API3__
+
+#ifndef EXPORT_FUNC
+#ifdef _WIN32
+#define EXPORT_FUNC __declspec(dllexport)
+#else
+#define EXPORT_FUNC
+#endif
+#endif
+
+#define LIB7API1_H "lib7api1.h"
+#include LIB7API1_H
+#include "lib7api1.h"
+
+/*
+ * Here is a type declaration.
+ */
+struct lib6api31 {
+    int x;
+    int y;
+};
+
+/*
+ * Here is a type declaration.
+ */
+struct lib6api32 {
+    int x;
+    int y;
+};
+
+/*
+ * Here is a type declaration.
+ */
+struct lib6api33 {
+    int x;
+    int y;
+};
+
+/*
+ * Here is a type declaration.
+ */
+struct lib6api34 {
+    int x;
+    int y;
+};
+
+/*
+ * Here is a type declaration.
+ */
+class Lib6Api3 {
+  public:
+    void EXPORT_FUNC doSomething();
+    void doSomethingWith(Lib7Api1& p);
+};
+
+#endif
+

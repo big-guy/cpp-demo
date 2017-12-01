@@ -1,0 +1,12 @@
+// GENERATED BUILD SCRIPT
+
+apply plugin: 'cpp-library'
+
+dependencies {
+    api project(':lib10core1')
+    api project(':lib11api1')
+    implementation project(':lib10core2')
+    implementation project(':lib11api2')
+    implementation project(':lib11api3')
+}
+

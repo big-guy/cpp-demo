@@ -1,0 +1,379 @@
+digraph builds {
+  graph [rankdir="LR"]
+  subgraph cluster_build_testApp {
+    color = "blue"
+    testApp
+    lib18api
+    lib17api1
+    lib16core1
+    lib16core2
+    lib17api2
+    lib16impl
+    lib16api1
+    lib15core1
+    lib15core2
+    lib16api2
+    lib16api3
+    lib15impl
+    lib15api1
+    lib14core1
+    lib14core2
+    lib15api2
+    lib15api3
+    lib14impl
+    lib14api1
+    lib13core1
+    lib13core2
+    lib14api2
+    lib14api3
+    lib13impl
+    lib13api1
+    lib12core1
+    lib12core2
+    lib13api2
+    lib13api3
+    lib12impl
+    lib12api1
+    lib11core1
+    lib11core2
+    lib12api2
+    lib12api3
+    lib11impl
+    lib11api1
+    lib10core1
+    lib10core2
+    lib11api2
+    lib11api3
+    lib10impl
+    lib10api1
+    lib9core1
+    lib9core2
+    lib10api2
+    lib10api3
+    lib9impl
+    lib9api1
+    lib8core1
+    lib8core2
+    lib9api2
+    lib9api3
+    lib8impl
+    lib8api1
+    lib7core1
+    lib7core2
+    lib8api2
+    lib8api3
+    lib7impl
+    lib7api1
+    lib6core1
+    lib6core2
+    lib7api2
+    lib7api3
+    lib6impl
+    lib6api1
+    lib5core1
+    lib5core2
+    lib6api2
+    lib6api3
+    lib5impl
+    lib5api1
+    lib4core1
+    lib4core2
+    lib5api2
+    lib5api3
+    lib4impl
+    lib4api1
+    lib3core1
+    lib3core2
+    lib4api2
+    lib4api3
+    lib3impl
+    lib3api1
+    lib2core1
+    lib2core2
+    lib3api2
+    lib3api3
+    lib2impl
+    lib2api1
+    lib1core1
+    lib1core2
+    lib2api2
+    lib2api3
+    lib1impl
+    lib1api1
+    lib1api2
+    lib1api3
+  }
+  testApp -> lib1api1 [color = "black"]
+  testApp -> lib1api2 [color = "grey56"]
+  testApp -> lib1api3 [color = "grey56"]
+  lib17api1 -> lib18api [color = "grey56"]
+  lib17api2 -> lib18api [color = "grey56"]
+  lib16impl -> lib16core1 [color = "black"]
+  lib16impl -> lib17api1 [color = "black"]
+  lib16impl -> lib16core2 [color = "grey56"]
+  lib16impl -> lib17api2 [color = "grey56"]
+  lib16api1 -> lib17api1 [color = "black"]
+  lib16api1 -> lib16impl [color = "grey56"]
+  lib16api1 -> lib17api2 [color = "grey56"]
+  lib16api2 -> lib17api1 [color = "black"]
+  lib16api2 -> lib16impl [color = "grey56"]
+  lib16api2 -> lib17api2 [color = "grey56"]
+  lib16api3 -> lib17api1 [color = "black"]
+  lib16api3 -> lib16impl [color = "grey56"]
+  lib16api3 -> lib17api2 [color = "grey56"]
+  lib15impl -> lib15core1 [color = "black"]
+  lib15impl -> lib16api1 [color = "black"]
+  lib15impl -> lib15core2 [color = "grey56"]
+  lib15impl -> lib16api2 [color = "grey56"]
+  lib15impl -> lib16api3 [color = "grey56"]
+  lib15api1 -> lib16api1 [color = "black"]
+  lib15api1 -> lib15impl [color = "grey56"]
+  lib15api1 -> lib16api2 [color = "grey56"]
+  lib15api1 -> lib16api3 [color = "grey56"]
+  lib15api2 -> lib16api1 [color = "black"]
+  lib15api2 -> lib15impl [color = "grey56"]
+  lib15api2 -> lib16api2 [color = "grey56"]
+  lib15api2 -> lib16api3 [color = "grey56"]
+  lib15api3 -> lib16api1 [color = "black"]
+  lib15api3 -> lib15impl [color = "grey56"]
+  lib15api3 -> lib16api2 [color = "grey56"]
+  lib15api3 -> lib16api3 [color = "grey56"]
+  lib14impl -> lib14core1 [color = "black"]
+  lib14impl -> lib15api1 [color = "black"]
+  lib14impl -> lib14core2 [color = "grey56"]
+  lib14impl -> lib15api2 [color = "grey56"]
+  lib14impl -> lib15api3 [color = "grey56"]
+  lib14api1 -> lib15api1 [color = "black"]
+  lib14api1 -> lib14impl [color = "grey56"]
+  lib14api1 -> lib15api2 [color = "grey56"]
+  lib14api1 -> lib15api3 [color = "grey56"]
+  lib14api2 -> lib15api1 [color = "black"]
+  lib14api2 -> lib14impl [color = "grey56"]
+  lib14api2 -> lib15api2 [color = "grey56"]
+  lib14api2 -> lib15api3 [color = "grey56"]
+  lib14api3 -> lib15api1 [color = "black"]
+  lib14api3 -> lib14impl [color = "grey56"]
+  lib14api3 -> lib15api2 [color = "grey56"]
+  lib14api3 -> lib15api3 [color = "grey56"]
+  lib13impl -> lib13core1 [color = "black"]
+  lib13impl -> lib14api1 [color = "black"]
+  lib13impl -> lib13core2 [color = "grey56"]
+  lib13impl -> lib14api2 [color = "grey56"]
+  lib13impl -> lib14api3 [color = "grey56"]
+  lib13api1 -> lib14api1 [color = "black"]
+  lib13api1 -> lib13impl [color = "grey56"]
+  lib13api1 -> lib14api2 [color = "grey56"]
+  lib13api1 -> lib14api3 [color = "grey56"]
+  lib13api2 -> lib14api1 [color = "black"]
+  lib13api2 -> lib13impl [color = "grey56"]
+  lib13api2 -> lib14api2 [color = "grey56"]
+  lib13api2 -> lib14api3 [color = "grey56"]
+  lib13api3 -> lib14api1 [color = "black"]
+  lib13api3 -> lib13impl [color = "grey56"]
+  lib13api3 -> lib14api2 [color = "grey56"]
+  lib13api3 -> lib14api3 [color = "grey56"]
+  lib12impl -> lib12core1 [color = "black"]
+  lib12impl -> lib13api1 [color = "black"]
+  lib12impl -> lib12core2 [color = "grey56"]
+  lib12impl -> lib13api2 [color = "grey56"]
+  lib12impl -> lib13api3 [color = "grey56"]
+  lib12api1 -> lib13api1 [color = "black"]
+  lib12api1 -> lib12impl [color = "grey56"]
+  lib12api1 -> lib13api2 [color = "grey56"]
+  lib12api1 -> lib13api3 [color = "grey56"]
+  lib12api2 -> lib13api1 [color = "black"]
+  lib12api2 -> lib12impl [color = "grey56"]
+  lib12api2 -> lib13api2 [color = "grey56"]
+  lib12api2 -> lib13api3 [color = "grey56"]
+  lib12api3 -> lib13api1 [color = "black"]
+  lib12api3 -> lib12impl [color = "grey56"]
+  lib12api3 -> lib13api2 [color = "grey56"]
+  lib12api3 -> lib13api3 [color = "grey56"]
+  lib11impl -> lib11core1 [color = "black"]
+  lib11impl -> lib12api1 [color = "black"]
+  lib11impl -> lib11core2 [color = "grey56"]
+  lib11impl -> lib12api2 [color = "grey56"]
+  lib11impl -> lib12api3 [color = "grey56"]
+  lib11api1 -> lib12api1 [color = "black"]
+  lib11api1 -> lib11impl [color = "grey56"]
+  lib11api1 -> lib12api2 [color = "grey56"]
+  lib11api1 -> lib12api3 [color = "grey56"]
+  lib11api2 -> lib12api1 [color = "black"]
+  lib11api2 -> lib11impl [color = "grey56"]
+  lib11api2 -> lib12api2 [color = "grey56"]
+  lib11api2 -> lib12api3 [color = "grey56"]
+  lib11api3 -> lib12api1 [color = "black"]
+  lib11api3 -> lib11impl [color = "grey56"]
+  lib11api3 -> lib12api2 [color = "grey56"]
+  lib11api3 -> lib12api3 [color = "grey56"]
+  lib10impl -> lib10core1 [color = "black"]
+  lib10impl -> lib11api1 [color = "black"]
+  lib10impl -> lib10core2 [color = "grey56"]
+  lib10impl -> lib11api2 [color = "grey56"]
+  lib10impl -> lib11api3 [color = "grey56"]
+  lib10api1 -> lib11api1 [color = "black"]
+  lib10api1 -> lib10impl [color = "grey56"]
+  lib10api1 -> lib11api2 [color = "grey56"]
+  lib10api1 -> lib11api3 [color = "grey56"]
+  lib10api2 -> lib11api1 [color = "black"]
+  lib10api2 -> lib10impl [color = "grey56"]
+  lib10api2 -> lib11api2 [color = "grey56"]
+  lib10api2 -> lib11api3 [color = "grey56"]
+  lib10api3 -> lib11api1 [color = "black"]
+  lib10api3 -> lib10impl [color = "grey56"]
+  lib10api3 -> lib11api2 [color = "grey56"]
+  lib10api3 -> lib11api3 [color = "grey56"]
+  lib9impl -> lib9core1 [color = "black"]
+  lib9impl -> lib10api1 [color = "black"]
+  lib9impl -> lib9core2 [color = "grey56"]
+  lib9impl -> lib10api2 [color = "grey56"]
+  lib9impl -> lib10api3 [color = "grey56"]
+  lib9api1 -> lib10api1 [color = "black"]
+  lib9api1 -> lib9impl [color = "grey56"]
+  lib9api1 -> lib10api2 [color = "grey56"]
+  lib9api1 -> lib10api3 [color = "grey56"]
+  lib9api2 -> lib10api1 [color = "black"]
+  lib9api2 -> lib9impl [color = "grey56"]
+  lib9api2 -> lib10api2 [color = "grey56"]
+  lib9api2 -> lib10api3 [color = "grey56"]
+  lib9api3 -> lib10api1 [color = "black"]
+  lib9api3 -> lib9impl [color = "grey56"]
+  lib9api3 -> lib10api2 [color = "grey56"]
+  lib9api3 -> lib10api3 [color = "grey56"]
+  lib8impl -> lib8core1 [color = "black"]
+  lib8impl -> lib9api1 [color = "black"]
+  lib8impl -> lib8core2 [color = "grey56"]
+  lib8impl -> lib9api2 [color = "grey56"]
+  lib8impl -> lib9api3 [color = "grey56"]
+  lib8api1 -> lib9api1 [color = "black"]
+  lib8api1 -> lib8impl [color = "grey56"]
+  lib8api1 -> lib9api2 [color = "grey56"]
+  lib8api1 -> lib9api3 [color = "grey56"]
+  lib8api2 -> lib9api1 [color = "black"]
+  lib8api2 -> lib8impl [color = "grey56"]
+  lib8api2 -> lib9api2 [color = "grey56"]
+  lib8api2 -> lib9api3 [color = "grey56"]
+  lib8api3 -> lib9api1 [color = "black"]
+  lib8api3 -> lib8impl [color = "grey56"]
+  lib8api3 -> lib9api2 [color = "grey56"]
+  lib8api3 -> lib9api3 [color = "grey56"]
+  lib7impl -> lib7core1 [color = "black"]
+  lib7impl -> lib8api1 [color = "black"]
+  lib7impl -> lib7core2 [color = "grey56"]
+  lib7impl -> lib8api2 [color = "grey56"]
+  lib7impl -> lib8api3 [color = "grey56"]
+  lib7api1 -> lib8api1 [color = "black"]
+  lib7api1 -> lib7impl [color = "grey56"]
+  lib7api1 -> lib8api2 [color = "grey56"]
+  lib7api1 -> lib8api3 [color = "grey56"]
+  lib7api2 -> lib8api1 [color = "black"]
+  lib7api2 -> lib7impl [color = "grey56"]
+  lib7api2 -> lib8api2 [color = "grey56"]
+  lib7api2 -> lib8api3 [color = "grey56"]
+  lib7api3 -> lib8api1 [color = "black"]
+  lib7api3 -> lib7impl [color = "grey56"]
+  lib7api3 -> lib8api2 [color = "grey56"]
+  lib7api3 -> lib8api3 [color = "grey56"]
+  lib6impl -> lib6core1 [color = "black"]
+  lib6impl -> lib7api1 [color = "black"]
+  lib6impl -> lib6core2 [color = "grey56"]
+  lib6impl -> lib7api2 [color = "grey56"]
+  lib6impl -> lib7api3 [color = "grey56"]
+  lib6api1 -> lib7api1 [color = "black"]
+  lib6api1 -> lib6impl [color = "grey56"]
+  lib6api1 -> lib7api2 [color = "grey56"]
+  lib6api1 -> lib7api3 [color = "grey56"]
+  lib6api2 -> lib7api1 [color = "black"]
+  lib6api2 -> lib6impl [color = "grey56"]
+  lib6api2 -> lib7api2 [color = "grey56"]
+  lib6api2 -> lib7api3 [color = "grey56"]
+  lib6api3 -> lib7api1 [color = "black"]
+  lib6api3 -> lib6impl [color = "grey56"]
+  lib6api3 -> lib7api2 [color = "grey56"]
+  lib6api3 -> lib7api3 [color = "grey56"]
+  lib5impl -> lib5core1 [color = "black"]
+  lib5impl -> lib6api1 [color = "black"]
+  lib5impl -> lib5core2 [color = "grey56"]
+  lib5impl -> lib6api2 [color = "grey56"]
+  lib5impl -> lib6api3 [color = "grey56"]
+  lib5api1 -> lib6api1 [color = "black"]
+  lib5api1 -> lib5impl [color = "grey56"]
+  lib5api1 -> lib6api2 [color = "grey56"]
+  lib5api1 -> lib6api3 [color = "grey56"]
+  lib5api2 -> lib6api1 [color = "black"]
+  lib5api2 -> lib5impl [color = "grey56"]
+  lib5api2 -> lib6api2 [color = "grey56"]
+  lib5api2 -> lib6api3 [color = "grey56"]
+  lib5api3 -> lib6api1 [color = "black"]
+  lib5api3 -> lib5impl [color = "grey56"]
+  lib5api3 -> lib6api2 [color = "grey56"]
+  lib5api3 -> lib6api3 [color = "grey56"]
+  lib4impl -> lib4core1 [color = "black"]
+  lib4impl -> lib5api1 [color = "black"]
+  lib4impl -> lib4core2 [color = "grey56"]
+  lib4impl -> lib5api2 [color = "grey56"]
+  lib4impl -> lib5api3 [color = "grey56"]
+  lib4api1 -> lib5api1 [color = "black"]
+  lib4api1 -> lib4impl [color = "grey56"]
+  lib4api1 -> lib5api2 [color = "grey56"]
+  lib4api1 -> lib5api3 [color = "grey56"]
+  lib4api2 -> lib5api1 [color = "black"]
+  lib4api2 -> lib4impl [color = "grey56"]
+  lib4api2 -> lib5api2 [color = "grey56"]
+  lib4api2 -> lib5api3 [color = "grey56"]
+  lib4api3 -> lib5api1 [color = "black"]
+  lib4api3 -> lib4impl [color = "grey56"]
+  lib4api3 -> lib5api2 [color = "grey56"]
+  lib4api3 -> lib5api3 [color = "grey56"]
+  lib3impl -> lib3core1 [color = "black"]
+  lib3impl -> lib4api1 [color = "black"]
+  lib3impl -> lib3core2 [color = "grey56"]
+  lib3impl -> lib4api2 [color = "grey56"]
+  lib3impl -> lib4api3 [color = "grey56"]
+  lib3api1 -> lib4api1 [color = "black"]
+  lib3api1 -> lib3impl [color = "grey56"]
+  lib3api1 -> lib4api2 [color = "grey56"]
+  lib3api1 -> lib4api3 [color = "grey56"]
+  lib3api2 -> lib4api1 [color = "black"]
+  lib3api2 -> lib3impl [color = "grey56"]
+  lib3api2 -> lib4api2 [color = "grey56"]
+  lib3api2 -> lib4api3 [color = "grey56"]
+  lib3api3 -> lib4api1 [color = "black"]
+  lib3api3 -> lib3impl [color = "grey56"]
+  lib3api3 -> lib4api2 [color = "grey56"]
+  lib3api3 -> lib4api3 [color = "grey56"]
+  lib2impl -> lib2core1 [color = "black"]
+  lib2impl -> lib3api1 [color = "black"]
+  lib2impl -> lib2core2 [color = "grey56"]
+  lib2impl -> lib3api2 [color = "grey56"]
+  lib2impl -> lib3api3 [color = "grey56"]
+  lib2api1 -> lib3api1 [color = "black"]
+  lib2api1 -> lib2impl [color = "grey56"]
+  lib2api1 -> lib3api2 [color = "grey56"]
+  lib2api1 -> lib3api3 [color = "grey56"]
+  lib2api2 -> lib3api1 [color = "black"]
+  lib2api2 -> lib2impl [color = "grey56"]
+  lib2api2 -> lib3api2 [color = "grey56"]
+  lib2api2 -> lib3api3 [color = "grey56"]
+  lib2api3 -> lib3api1 [color = "black"]
+  lib2api3 -> lib2impl [color = "grey56"]
+  lib2api3 -> lib3api2 [color = "grey56"]
+  lib2api3 -> lib3api3 [color = "grey56"]
+  lib1impl -> lib1core1 [color = "black"]
+  lib1impl -> lib2api1 [color = "black"]
+  lib1impl -> lib1core2 [color = "grey56"]
+  lib1impl -> lib2api2 [color = "grey56"]
+  lib1impl -> lib2api3 [color = "grey56"]
+  lib1api1 -> lib2api1 [color = "black"]
+  lib1api1 -> lib1impl [color = "grey56"]
+  lib1api1 -> lib2api2 [color = "grey56"]
+  lib1api1 -> lib2api3 [color = "grey56"]
+  lib1api2 -> lib2api1 [color = "black"]
+  lib1api2 -> lib1impl [color = "grey56"]
+  lib1api2 -> lib2api2 [color = "grey56"]
+  lib1api2 -> lib2api3 [color = "grey56"]
+  lib1api3 -> lib2api1 [color = "black"]
+  lib1api3 -> lib1impl [color = "grey56"]
+  lib1api3 -> lib2api2 [color = "grey56"]
+  lib1api3 -> lib2api3 [color = "grey56"]
+}

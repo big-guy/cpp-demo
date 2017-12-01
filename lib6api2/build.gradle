@@ -1,0 +1,11 @@
+// GENERATED BUILD SCRIPT
+
+apply plugin: 'cpp-library'
+
+dependencies {
+    api project(':lib7api1')
+    implementation project(':lib6impl')
+    implementation project(':lib7api2')
+    implementation project(':lib7api3')
+}
+

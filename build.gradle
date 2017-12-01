@@ -1,0 +1,29 @@
+// GENERATED BUILD SCRIPT
+
+if (gradle.gradleVersion.startsWith('4.2')) { apply plugin: 'cpp-executable' }
+if (gradle.gradleVersion.startsWith('4.3')) { apply plugin: 'cpp-executable' }
+if (gradle.gradleVersion.startsWith('4.4')) { apply plugin: 'cpp-executable' }
+if (gradle.gradleVersion.startsWith('4.5')) { apply plugin: 'cpp-application' }
+
+allprojects {
+    apply plugin: 'xcode'
+    apply plugin: 'maven-publish'
+
+    group = 'test'
+    version = '1.2'
+
+    publishing {
+        repositories {
+            maven {
+                url = rootProject.file('repo')
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation project(':lib1api1')
+    implementation project(':lib1api2')
+    implementation project(':lib1api3')
+}
+

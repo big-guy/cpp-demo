@@ -1,0 +1,50 @@
+// GENERATED SCENARIO FILE
+
+assemble {
+    tasks = [":linkDebug", ":linkRelease"]
+}
+
+assembleParallel {
+    gradle-args = ["--parallel"]
+    tasks = [":linkDebug", ":linkRelease"]
+}
+
+cleanAssemble {
+    cleanup-tasks = ["clean"]
+    tasks = [":linkDebug", ":linkRelease"]
+}
+
+cleanAssembleParallel {
+    gradle-args = ["--parallel"]
+    cleanup-tasks = ["clean"]
+    tasks = [":linkDebug", ":linkRelease"]
+}
+
+cleanAssembleParallelCache {
+    gradle-args = ["--parallel", "--build-cache", "-Dorg.gradle.caching.native=true"]
+    cleanup-tasks = ["clean"]
+    tasks = [":linkDebug", ":linkRelease"]
+}
+
+abiAssemble {
+    tasks = [":linkDebug", ":linkRelease"]
+    apply-h-change-to = "lib18api/src/main/public/lib18api.h"
+}
+
+abiAssembleParallel {
+    gradle-args = ["--parallel"]
+    tasks = [":linkDebug", ":linkRelease"]
+    apply-h-change-to = "lib18api/src/main/public/lib18api.h"
+}
+
+nonAbiAssemble {
+    tasks = [":linkDebug", ":linkRelease"]
+    apply-cpp-change-to = "lib18api/src/main/cpp/lib18api.cpp"
+}
+
+nonAbiAssembleParallel {
+    gradle-args = ["--parallel"]
+    tasks = [":linkDebug", ":linkRelease"]
+    apply-cpp-change-to = "lib18api/src/main/cpp/lib18api.cpp"
+}
+
